@@ -11,7 +11,8 @@ def download_category_tags(category, minimum_post_count, limit, page_size=1000, 
         'general': 0,
         'artist': 1,
         'copyright': 3,
-        'character': 4
+        'character': 4,
+        'species': 5
     }
 
     gold_only_tags = ['loli', 'shota', 'toddlercon']
