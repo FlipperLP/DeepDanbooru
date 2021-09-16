@@ -99,11 +99,11 @@ def download_tags(project_path, limit, minimum_post_count, is_overwrite):
         #    'category': 'artist',
         #    'path': os.path.join(path, 'tags-artist.txt'),
         # },
-        # {
-        #    'category_name': 'Copyright',
-        #    'category': 'copyright',
-        #    'path': os.path.join(path, 'tags-copyright.txt'),
-        # },
+        {
+            'category_name': 'Species',
+            'category': 'species',
+            'path': os.path.join(project_path, 'tags-species.txt'),
+        },
         {
             'category_name': 'Character',
             'category': 'character',
