@@ -29,13 +29,16 @@ def download_category_tags(category, minimum_post_count, limit, page_size=1000, 
         'search[category]': category_index
     }
 
+    headers = {
+        'User-Agent': 'DeepDanbooru'
+    }
 
     request_url = 'https://e621.net/tags.json'
 
     tags = set()
 
     while True:
-        response = requests.get(request_url, params=parameters)
+        response = requests.get(request_url, params=parameters, headers=headers)
         response_json = response.json()
 
         response_tags = [tag_json['name']
